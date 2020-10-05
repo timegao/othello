@@ -1,0 +1,33 @@
+boardsize: initially 4 x 4, then 8 x 8
+- set board size based on dimensions, board width and height to calculate size of each square and scale
+boolean - black/white for color of piece
+
+start:
+white (3, 3), (4, 4)
+black (3, 4), (4, 3)
+
+list of all horizontals, verticals, and diagonals (3 or longer) 
+for every possible position on board, there is either a piece (black or white), a possible move (represented by gray circle), or an empty tile
+
+board class
+- matrix to keep track of disks
+- 
+
+disk class
+- grayed out space for possible moves?
+- black and white, None for disk that is not displayed
+
+player parent class
+- human
+- computer
+
+while:
+legal move available
+alternate between black/white
+
+check if player makes a legal move out of available moves
+available moves is a list
+
+mouseclick on register (x, y) coordinate
+check if (x, y) coordinate within range of legal move
+place piece in center within tile

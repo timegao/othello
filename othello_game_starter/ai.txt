@@ -1,0 +1,23 @@
+Did you attempt to make your computer player very smart -- i.e., do something more clever than just pick a random legal move?
+
+- Yes, I wrote two algorithms, a greedy algorithm and a variation of a minimax algorithm.
+
+
+If so, were you able to accomplish this? Is your computer player as smart as you would like?
+
+- I wrote two algorithms. The minimax algorithm is good but beatable, it's the default when the option "DOUBLE_COMP" is set to False.
+
+
+How did you determine which piece to play next? Tell us about your “pick next move” algorithm
+
+- The greedy algorithm maximizes the numbers of disks captured on the next move. The minimax algorithm minimizes the numbers of options that the opponent would have the following turn. The logic is containment. By capturing the outside spaces first and minimizing the next players' options, the algorithm attempts to corner the opponent. The algorithm also accounts for corners both by capturing corners whenever possible and also denying the opponent's ability to capture corners whenever possible.
+
+
+How often did your computer program beat you, or your friends, or whoever tested it out for you?
+
+- I tested with the help of both humans and computers. The computers could play against each other if the "DOUBLE_COMP" option is set to True, and the minimax algorithm usually won but not always depending on the board dimension. Watch the computers play against each other at super speed! Set the dimension to any size and watch the computer lag! Black by default is set to the minimax algorithm and white the greedy algorithm. Against humans, the algorithm does well and usually wins, but it's beatable, I can beat it about half the times.
+
+
+How would you improve it in the future?
+
+- Depth-first search or an iterative approach to calculate the number of disks that the next player would capture given a certain move would be the next algorithm I would try. This algorithm should also account for corners both by capturing corners whenever possible and also denying the opponent's ability to capture corners whenever possible. When performing more calculations, there is a noticeable lag especially when board dimensions are increased to 24 x 24. There is a limit to the number of calculations that can be completed within 2 seconds or 10 seconds hence recursion level may be severely limited if a supercomputer is not available (testing was done on a Intel Core m5-6Y57 processor which has 2 cores, 4 threads, and a turbo frequency of 2.80 GHz).

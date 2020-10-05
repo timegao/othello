@@ -1,0 +1,57 @@
+class: Board
+- __init__()
+    The size, scale, row, and col constants are calculated.
+    The disks are instantiated each according to the list comprehension.
+
+- display_board()
+    The lines are displayed on the board.
+    The display() method is called on all the disks in the board.
+- init_board()
+    The initial four disks' colors are changed to their appropriate colors.
+
+class: Disk:
+- display()
+    The disk is displayed on the board.
+    The disk is located at the correct row/col.
+    The disk is the correct color.
+    The disk is circular in shape.
+    The disk is the right size.
+    The disk is centered within the lines.
+    The disks with None as its color are not displayed.
+
+class Player:
+- __init__():
+    One player starts as active and another inactive.
+- place_piece()
+    The color of the disk on the board changes to the player's color.
+    The disk placed has the right color according to the active player.
+    The disk is placed at the correct location.
+- score_points()
+    The player's score is updated.
+    The player's score is correctly displayed at the end of the game.
+
+othello_game_starter:
+- mouseClicked()
+    The mouse_clicked() method is called.
+
+class game_controller:
+- start_game()
+    The init_board() method is called.
+- update_game()
+    The display_board() method is called.
+    The check_game_over() method is called.
+- click_mouse()
+    The method does not execute when the disk already has a color.
+    The correct row/col parameters are passed to the place_disk() method.
+    The correct player places the disk.
+    The switch_player() method is called.
+- switch_player()
+    The active player switches to the other player.
+- check_game_over()
+    The end_game() method is called when the board is filled.
+    If the game is over, self.game_over is set to True.
+- end_game()
+    The texts are displayed when the game ends.
+    The texts are displayed at the correct position.
+    The texts are not too big and not too small.
+    The texts are the correct color.
